@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>youtube-mp3</title>
+		<style>
+			html {}
+			body {}
+			h1 { margin-top: 100px; margin-left: 100px; font-family: Helvetica Neue; font-size: 120px; color: #e7e7e7;}
+			h2 {}
+			h3 {}
+			h4 {}
+			h5 {}
+			h6 {}
+			bracket {font-family: inherit; font-size: inherit; color: #888;}
+			hoverer {font-family: inherit; font-size: inherit;}
+			hoverer:hover {font-family: inherit; font-size: inherit; color: #FF000C;}
+			div#header {display: none;}
+			div#page {display: none; margin-left: 200px; margin-top: 75px; font-family: Helvetica Neue; color: #888; font-size: 25px; width: 750px;}
+		</style>
+		
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		
+	</head>
+	<body>		
+		
+		<div id="header"><h1><bracket>[</bracket><hoverer>youtube</hoverer><bracket>]</bracket>-mp3<br></h1></div>
+		
+		<div id="page">	youtube-mp3 uses youtube-dl, FFmpeg, and LAME to download videos and extract their audio.<br><br>youtube-mp3 is a fork of youtube2mp3. youtube2mp3 requires zenity, and therefore will only run on linux. youtube-mp3 can be run in both Linux and OS X. The youtube-mp3 install script requires wget, however. youtube-mp3 for OS X requires FFmpeg which is installed when the install script is executed.<br><br><br> </div>
+		
+		<script>
+   			$(function () {
+        		$("#header").delay(500).fadeIn("1000");
+				$("#page").delay(1500).fadeIn("2500");
+    		});
+		</script>
+	</body>
+</html>
