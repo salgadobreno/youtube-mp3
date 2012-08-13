@@ -10,5 +10,7 @@ Run the `install` shell script to install. Everything is installed into `/usr/lo
 
 ######Usage:
 
-`youtube-mp3`  
-`Please enter a YouTube URL: URL`
+```bash
+youtube-mp3  
+Please enter a YouTube URL: URL`
+```
