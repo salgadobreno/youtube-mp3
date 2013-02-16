@@ -13,14 +13,14 @@ function installformac() {
   sudo rm -rf /tmp/ffmpeg.zip
   sudo rm -rf /tmp/FFmpeg_*
   sudo wget --output-document=/usr/local/bin/youtube-dl https://raw.github.com/rg3/youtube-dl/master/youtube-dl
-  sudo wget --output-document=/usr/local/bin/youtube-mp3 https://raw.github.com/dejay/youtube-mp3/master/youtube-mp3
+  sudo wget --output-document=/usr/local/bin/youtube-mp3 https://raw.github.com/salgadobreno/youtube-mp3/master/youtube-mp3
   sudo chmod a+x /usr/local/bin/youtube-dl
   sudo chmod a+x /usr/local/bin/youtube-mp3
 }
 
 function installforlinux() {
   sudo wget --output-document=/usr/local/bin/youtube-dl https://raw.github.com/rg3/youtube-dl/master/youtube-dl
-  sudo wget --output-document=/usr/local/bin/youtube-mp3 https://raw.github.com/dejay/youtube-mp3/master/youtube-mp3
+  sudo wget --output-document=/usr/local/bin/youtube-mp3 https://raw.github.com/salgadobreno/youtube-mp3/master/youtube-mp3
   sudo chmod a+x /usr/local/bin/youtube-dl
   sudo chmod a+x /usr/local/bin/youtube-mp3
 }
