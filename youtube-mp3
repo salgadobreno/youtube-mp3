@@ -1,9 +1,13 @@
 #!/bin/bash
 
-read -r -p "Enter YouTube address: " address
-return_code=$?
+if [ $# == 0 ]; then
+  read -r -p "Enter YouTube address: " address
+else
+  address=$1
+fi
+
 regex='v=(.*)'
-if [[ $return_code -eq 0 ]]; then
+if [ ! -z $address ]; then
 	if [[ $address =~ $regex ]]; then
 		video_id=${BASH_REMATCH[1]}
 		video_id=$(echo $video_id | cut -d'&' -f1)
